@@ -1,0 +1,25 @@
+{
+  "name": "DovizServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "start": "nodemon App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "soap": "^0.35.0",
+    "socket.io": "^3.0.3",
+    "xml-js": "^1.6.11",
+    "xml2json": "^0.12.0"
+  }
+}
