@@ -9,8 +9,8 @@ router.get('/',(req,res)=>{
     let xmls='<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'+
     '<soap:Header>'+
         '<AuthHeader xmlns="http://data.altinkaynak.com/">'+
-            '<Username>'+process.env.kullanici_adi+'</Username>'+
-            '<Password>'+process.env.sifre+'</Password>'+
+            '<Username>'+process.env.KULLANICI_ADI+'</Username>'+
+            '<Password>'+process.env.SIFRE+'</Password>'+
         '</AuthHeader>'+
     '</soap:Header>'+
     '<soap:Body>'+

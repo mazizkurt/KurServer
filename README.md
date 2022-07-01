@@ -3,13 +3,11 @@ Anlık Döviz Kuru Altın Bilgilerini altinkaynak.com içerisinden erişebilirsi
 
 .env dosyanızı oluşturup;
 
-kullanici_adi = AltinkaynakWebServis
+KULLANICI_ADI = AltinkaynakWebServis
 
-sifre = AltinkaynakWebServis
+SIFRE = AltinkaynakWebServis
 
-port = "Serverin başlatılacağı portu burada belirtin"
-
-api_key = "Bir api key belirtin :)"
+PORT = "Serverin başlatılacağı portu burada belirtin"
 
 Soap Request => Axios
 xml Response to Json => xml2json

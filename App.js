@@ -7,18 +7,9 @@ var Dolar = require('./src/Dolar')
 var Main = require('./src/Main')
 dotenv.config()
 app.use(cors())
-app.use('/',(req,res,next)=>{
-    var api_key = req.query.api_key;
-    if(api_key)
-        if(api_key == process.env.api_key)
-            next()
-        else
-            res.json({success:false,message:'Geçersiz Api Key'})
-    else
-        res.json({success:false,message:'Bir anahtar belirtin!'})
-})
-app.use('/altin',Altin)
-app.use('/dolar',Dolar)
-app.use('/main',Main)
 
-app.listen(process.env.port,()=>console.log('Server Çalışıyor.'))
+app.use(`/${process.env.VERSION}/dolar`,Dolar)
+app.use(`/${process.env.VERSION}/altin`,Altin)
+app.use(`/${process.env.VERSION}/main`,Main)
+
+app.listen(process.env.PORT,()=>console.log('Server Çalışıyor.'))
